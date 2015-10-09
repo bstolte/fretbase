@@ -41,6 +41,9 @@ gem 'devise'
 # Simple Form
 gem 'simple_form'
 
+# Carrierwave
+gem 'carrierwave'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
