@@ -2,8 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Exo+2:400,800);
 
 body {
-	font-family: 'Open Sans', sans-serif;
-	//font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  font-family: 'Open Sans', sans-serif;
+  //font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
 .navbar {
@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .forgot-password {
-	margin: 20px 0px 0px 0px;
+  margin: 20px 0px 0px 0px;
 }
 
 .clr {
@@ -86,4 +86,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
   margin: 10px;
 }
 
-
+.videocontent {
+  width: 80%;
+  max-width: 640px;
+}
