@@ -50,6 +50,9 @@ gem "figaro"
 # Fog 
 gem "fog", "~> 1.3.1"
 
+# Minimagick
+gem 'mini_magick'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
