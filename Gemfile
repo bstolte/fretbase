@@ -56,6 +56,9 @@ gem 'mini_magick', '~>4.3.1'
 # Stripe
 gem 'stripe'
 
+# Ranked model modern row sorting library
+gem 'ranked-model'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
