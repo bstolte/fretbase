@@ -59,6 +59,9 @@ gem 'stripe'
 # Ranked model modern row sorting library
 gem 'ranked-model'
 
+# jquery UI rails
+gem 'jquery-ui-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
