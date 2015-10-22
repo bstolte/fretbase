@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  has_many :taught_courses, class_name: "Course"
+  has_many :courses
   has_many :enrollments
   has_many :enrolled_courses, :through => :enrollments, :source => :course
   # Class: EnrolledCourse
@@ -18,17 +18,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   def enrolled_in?(course)
-
-    # enrolled_courses = enrollments.collect(&:course)
-
-    # enrolled_courses = enrollments.collect do |enrollment|
-    #     enrollment.course
-    # end
-
-    # enrolled_courses = []
-    # enrollments.each do |enrollment|
-    #   enrolled_courses << enrollment.course
-    # end
 
     return enrolled_courses.include?(course)
   end
