@@ -7,7 +7,7 @@ gem 'rails', '4.0.1'
 gem 'pg'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -33,7 +33,7 @@ group :doc do
 end
 
 # Use Twitter Bootstrap
-gem 'bootstrap-sass', '~> 3.3.5'
+gem 'bootstrap-sass', '3.3.5.1'
 
 # Use Devise
 gem 'devise'
@@ -61,6 +61,9 @@ gem 'ranked-model'
 
 # jquery UI rails
 gem 'jquery-ui-rails'
+
+# # sprockets
+gem 'sprockets', '2.11.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
