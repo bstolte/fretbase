@@ -67,9 +67,49 @@
 
 <div id="footer">
   <div class="container">
-    <b>Teachers</b>
+    <div class="col-xs-12 col-sm-3 footer-section">
+      <span><b class="heading-label">Teachers</b></span>
       <br />
       <%= link_to 'Teach a Course', new_instructor_course_path %>
+      <br />
+      <%= link_to 'My Dashboard', dashboard_path %>
+    </div>
+    <div class="col-xs-12 col-sm-3 footer-section">
+      <b class="heading-label">About</b>
+      <br />
+      <%= link_to 'Team', '#' %>
+      <br />
+      <%= link_to 'Careers', '#' %>
+      <br />
+      <%= link_to 'Privacy Policy', '#' %>
+    </div>
+    <div class="col-xs-12 col-sm-3 footer-section">
+      <b class="heading-label">Contact</b>
+      <br />
+      brian dot stolte @ gmail
+      <br />
+      140 Palm Ave Apt 5
+      <br />
+      San Francisco CA, 94118
+    </div>
+    <div class="col-xs-12 col-sm-3 footer-section">
+      <b class="heading-label">Social</b>
+      <div class="social-media-icons">
+        <%= link_to 'https://www.linkedin.com/in/brianstolte' do %>
+          <%= image_tag 'linkedin.png' %>
+        <% end %>
+      </div>
+      <div class="social-media-icons">
+        <%= link_to 'https://www.github.com/bstolte' do %>
+          <%= image_tag 'github.png' %>
+        <% end %>
+      </div>
+      <div class="social-media-icons">
+        <%= link_to 'https://twitter.com/bstolte' do %>
+          <%= image_tag 'twitter.png' %>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>
 
