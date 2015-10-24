@@ -5,6 +5,12 @@
   <p>
     <%= current_lesson.subtitle %>
   </p>
+  <% if current_lesson.next_lesson.present? %> 
+    <%= link_to lesson_path(current_lesson.next_lesson), :class => 'btn btn-default pull-right' do %>
+      Next lesson &nbsp;
+      <span class="glyphicon glyphicon-forward"></span>
+      <% end %> 
+  <% end %> 
   <div class="videocontent">
     <video id="my-video" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="auto" height="auto" poster="/assets/black.jpg" data-setup="{}">
       <source src="<%= current_lesson.video.to_s%>" type='video/mp4'>
