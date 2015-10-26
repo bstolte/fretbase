@@ -4,12 +4,15 @@
 body {
   font-family: 'Open Sans', sans-serif;
   //font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  background: url('bg.png');
+  color: #525252;
 }
 
 .navbar {
   border-radius: 0;
   //box-shadow: 0px 0px 3px #2a2a2a;
   //background:url('brushed_@2X.png');
+  background-color: #F7F8F5;
 }
 
 h1, h2, h3, h4, h5, h6, .navbar {
@@ -17,7 +20,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .navbar-default .navbar-brand {
-    color: #095495;
+    color: #53BF6B;
     font-family: 'Exo 2', sans-serif;
 }
 
@@ -58,17 +61,108 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .booyah-box {
-  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  box-shadow: 1px 1px 2px 0 #d0d0d0;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  position: relative;
+  clear: both;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(255,255,255,0.8);
+  margin-top: 20px;
+  padding: 25px;
 }
 
-.booyah-box h2, .booyah-box h1 {
-  margin: 10px 0px 20px 0px;
+.img-responsive {
+  margin: auto;
+  padding:15px;
+  border:1px solid #FFFFFF;
+  background-color: #FFFFFF;
 }
+
+.image-board {
+  background-color: rgba(130,130,120,0.2);
+  border: 10px;
+  padding: 30px;
+}
+
+.lesson-box {
+  position: relative;
+  clear: both;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(255,255,255,0.8);
+  margin-top: 20px;
+  padding: 25px;
+}
+
+.course-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.course-box {
+    display: inline-block;
+    position: relative;
+    background: #F7F7F5;
+    vertical-align: top;
+    white-space: normal;
+    width: 270px;
+    height: 300px;
+    box-shadow: 0 2px 2px rgba(0,0,0,.15);
+    text-align: left;
+    margin: 10px 10px 10px 15px;
+}
+
+.course-box a {
+  font-size: 20px;
+}
+
+.course-headline {
+  color: #F7F8F5;
+  padding: 15px;
+}
+
+.course-head {
+  width: 100%;
+  margin: 0;
+//    padding: 10px;
+}
+.course-head #one {
+  width: 80%;
+  float: left;
+  overflow: hidden;
+}
+.course-head #two {
+  margin-left: 20%;
+//  float: right;
+  overflow: hidden;
+}
+
+.course-title {
+  margin: 0px 10px 20px 10px;
+}
+
+.course-description {
+  margin: 15px;
+}
+
+.course-more-details {
+  margin: 15px 15px 15px 15px;
+  position: absolute;
+  bottom: 0;
+  left: 18%;
+}
+
+.course-more-details a {
+  font-size: 16px;
+}
+
+.lesson-box h1 {
+  margin: 0px 0px 20px 0px;
+}
+
+//.booyah-box h2, .booyah-box h1 {
+//  margin: 10px 0px 20px 0px;
+//}
 
 .forgot-password {
   margin: 20px 0px 0px 0px;
@@ -92,27 +186,39 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .lesson {
-  background-color: black;
+  background-color: #D8D9D3;
   margin-top: 10px;
   height: 130px;
+  padding: 20px;
 }
 
 .lesson a {
-  color: white;
+  color: #525252;
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
   font-size: 15px;
+  text-decoration: underline;
 }
 
 .lesson a b {
-  font-weight: 100;
-  font-size: 25px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.lesson-subtitle {
+  margin: 15px 0 30px;
 }
 
 .section {
-  border: 1px solid;
-  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+//  border: 1px solid;
+//  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding: 20px;
+}
+
+.section span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
 }
 
 ul {
@@ -129,13 +235,14 @@ ul .header .glyphicon {
 
 .section-li {
   border: 1px solid;
+  background-color: white;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding:20px;
   margin:20px;
 }
 
 .lessons li {
-  background: black;
+  background: #777777;
   color: white;
   margin: 10px;
   font-family: 'Open Sans', sans-serif;
@@ -153,9 +260,20 @@ ul .header .glyphicon {
   margin: 0;
 }
 
+.next-button {
+  margin: 20px 0 20px 0;
+}
 
+.alert-info {
+  margin: 10px;
+}
 
-
+.divider {
+  margin-top: 30px;
+  margin-bottom: -10px;
+  border: 0;
+  border-top: 2px solid #ddd;
+}
 
 
 
